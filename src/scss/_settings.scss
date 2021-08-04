@@ -9,6 +9,7 @@ html {
 }
 
 body {
+  height: 100%;
   overflow-anchor: none;
   font-family:"SFProDisplay", sans-serif;
   font-weight: 400;
@@ -17,9 +18,10 @@ body {
   background-color: var(--color-white);
   scroll-behavior: smooth;
 }
-
-img {
-  max-width: 100%;
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
