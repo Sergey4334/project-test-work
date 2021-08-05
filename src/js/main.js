@@ -3,6 +3,9 @@
 import $ from 'jquery';
 import '../../node_modules/slick-slider/slick/slick.js';
 import '../../node_modules/slick-slider/slick/slick.scss';
+import '../assets/inputmask.min';
+import '../assets/just-validate.min';
+import '../assets/script';
 
 import '../scss/main.scss';
 import '../index.html';
@@ -11,8 +14,14 @@ $(function ($) {
 
   "use strict";
 
-  var $window = $(window);
-  var windowsize = $(window).width();
+  let $window = $(window);
+  let windowsize = $(window).width();
+
+$('.link__menu--item').on('click', function () {
+    $('#burger-check').prop('checked', true)
+// удалим состояние checked 
+    $('#burger-check').prop('checked', false)
+});
 
   /* ====================================
    Nav Fixed On Scroll
@@ -48,21 +57,23 @@ $(function ($) {
                   slidesToShow: 1,
                   slidesToScroll: 1,
                   infinite: true,
-                  dots: true
+                  dots: false
               }
           },
           {
               breakpoint: 600,
               settings: {
                   slidesToShow: 1,
-                  slidesToScroll: 1
+                  slidesToScroll: 1,
+                  dots: false
               }
           },
           {
               breakpoint: 480,
               settings: {
                   slidesToShow: 1,
-                  slidesToScroll: 1
+                  slidesToScroll: 1,
+                  dots: false
               }
           }
       ]

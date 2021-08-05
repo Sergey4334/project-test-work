@@ -8,6 +8,7 @@
 </head>
 <body>
   <div class="wrapper">
+
     <header class="header static-nav" id="header">
       <div class="container">
         <div class="header__block">
@@ -19,33 +20,76 @@
               <img src="./img/text-logo.svg" alt="Logo Site">
             </a>
           </div>
+
           <div class="header-menu">
             <div class="icon-menu">
-              <div class="burger">
-                <span class="burger__line"></span>
-              </div>
-              <div class="munu__text">Menu</div>
+              <input class="burger-check" id="burger-check" type="checkbox">
+              <label for="burger-check" class="burger"></label>
+              <span class="menu__text link__menu--item">Menu</span>
+              <nav class="nav-menu desktop-menu">
+                <a href="/" class="logo__img logo-menu link__menu--item">
+                  <img src="./img/logo.svg" alt="Logo Site">
+                </a>
+                <div class="menu-wrapper">
+                  <div class="item">
+                    <a href="#" class="link-menu link__menu--item">Our sectors</a>
+                    <ul>
+                      <li class="link__menu--item"><a href="#">Wind Power</a></li>
+                      <li class="link__menu--item"><a href="#">Solar Power</a></li>
+                      <li class="link__menu--item"><a href="#">Hydro Power</a></li>
+                      <li class="link__menu--item"><a href="#">Enertgy Storage</a></li>
+                      <li class="link__menu--item"><a href="#">Digital</a></li>
+                    </ul>
+                  </div>
+                  <div class="item">
+                    <a href="#" class="link-menu link__menu--item">What we do</a>
+                    <ul>
+                      <li class="link__menu--item"><a href="#">Team Build</a></li>
+                      <li class="link__menu--item"><a href="#">Traditional Hirng</a></li>
+                      <li class="link__menu--item"><a href="#">Contractor Search</a></li>
+                      <li class="link__menu--item"><a href="#">Payroll Solutions</a></li>
+                      <li class="link__menu--item"><a href="#">Investments</a></li>
+                    </ul>
+                  </div>
+                  <div class="item">
+                    <a href="#" class="link-menu link__menu--item">Contact Us</a>
+                    <ul>
+                      <li class="link__menu--item"><a href="#">Send your CV</a></li>
+                      <li class="link__menu--item"><a href="#">Chat to us</a></li>
+                      <li class="link__menu--item"><a href="#">Submit a vacancy</a></li>
+                      <li class="link__menu--item"><a href="#">Office locations</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="nav-menu mobile-menu">
+                  <a href="/" class="logo__img logo-menu link__menu--item">
+                    <img src="./img/logo.svg" alt="Logo Site">
+                  </a>
+                  <div class="menu-wrapper-mobile">
+                    <ul class="list-reset">
+                      <li class="link__menu--item active"><a href="#">home</a></li>
+                      <li class="link__menu--item"><a href="#">shop</a></li>
+                      <li class="link__menu--item"><a href="#">About us</a></li>
+                      <li class="link__menu--item"><a href="#">contact us</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
             </div>
-            <nav class="nav-menu">
-              <ul class="list-reset">
-                <li><a href="/">Our sectors</a></li>
-                <li><a href="#">What we do</a></li>
-                <li><a href="#">Contact Us</a></li>
-              </ul>
-            </nav>
           </div>
         </div>
       </div>
     </header>
-    <div class="main">
+
+    <main class="main">
       <section class="section">
         <div class="container">
           <div class="section__title">
             <h1 class="title">Securing the talent of tomorrow<br /> in Renewable Energy</h1>
           </div>
           <div class="button">
-            <a class="btn-top" href="#">Talent Hub</a>
-            <a class="btn-top" href="#">Client Hub</a>
+            <a class="btn-top" href="#"><span class="btn-text--desk">Talent Hub</span> <span class="btn-text--mob">Ambitions Talant</span></a>
+            <a class="btn-top" href="#"><span class="btn-text--desk">Client Hub</span><span class="btn-text--mob">Growing Team</span></a>
           </div>
         </div>
       </section>
@@ -60,7 +104,7 @@
             <div class="service-img">
               <img src="./img/top-view-photo.jpg" alt="Service img">
             </div>
-            <div class="service-text">
+            <div class="service-text service__text--line1">
               <div class="block-service-text">
                 <h3 class="service-title">Team Build</h3>
                 <h4>Building a new team or scaling an exisiting one? This way to find out about our solution</h4>
@@ -68,12 +112,11 @@
             </div>
           </div>
           <div class="block-service">
-            <div class="service-text">
+            <div class="service-text service__text--line">
               <div class="block-service-text">
                 <h3 class="service-title">Traditional Hiring</h3>
                 <h4>Searching for an individual with a specific skill set to join your team, but flexible on when they can start? This is the solution for you</h4>
               </div>
-              
             </div>
             <div class="service-img">
               <img src="./img/man-wearing.jpg" alt="Service img">
@@ -83,7 +126,7 @@
             <div class="service-img">
               <img src="./img/man-with-headphone.jpg" alt="Service img">
             </div>
-            <div class="service-text">
+            <div class="service-text service__text--line1">
               <div class="block-service-text">
                 <h3 class="service-title">Executive Search</h3>
                 <h4>Building a new team or scaling an exisiting one? This way to find out about our solution</h4>
@@ -91,7 +134,7 @@
             </div>
           </div>
           <div class="block-service">
-            <div class="service-text">
+            <div class="service-text service__text--line">
               <div class="block-service-text">
                 <h3 class="service-title">Contractor Search</h3>
                 <h4>Building a new team or scaling an exisiting one? This way to find out about our solution</h4>
@@ -171,10 +214,16 @@
       </section>
   
       <section class="section-global">
-        <div class="container">
+        <div class="container-global">
           <div class="global-title">
+            <a href="/" class="logo-global">
+              <img src="./img/logo-global.svg" alt="Alt">
+            </a>
             <h2 class="title">Global reach<br/>local networks</h2>
             <div class="text-global">We have identified and secured top talent for customers in <a href="#">22 countries</a> and counting secured top talent for customers</div>
+          </div>
+          <div class="block-image-circul">
+            <img src="./img/ri.png" alt="Alt">
           </div>
         </div>
       </section>
@@ -189,7 +238,13 @@
               </div>
               <div class="contact-detail">
                 <h4>Contact Detail</h4>
-                <div class="mail-text">Contact@cartermadox.com</div>
+                <div class="local-contact">
+                  <div class="flag-en visibil-icon">
+                    <img src="./img/email_icon.svg" alt="Icon Email">
+                  </div>
+                  <div class="mail-text">Contact@cartermadox.com</div>
+                </div>
+                
                 <div class="local-contact">
                   <div class="flag-en">
                     <img src="./img/en_2 1.svg" alt="Icon local">
@@ -207,13 +262,17 @@
             <div class="item-form">
               <div class="form-action" >
                 <div class="wrapp-form">
-                  <form action="mail.php">
-                    <input type="text" name="first-name" class="input-name" placeholder="First name" required>
-                    <input type="text" name="name" class="input-name" placeholder="Email" required>
-                    <input type="text" name="phone" class="input-name phone" placeholder="Number" required>
-                    <input type="text" name="phone" class="input-name input-anything" placeholder="Asc Anything You Want" required>
+                  <form action="assets/mail.php" enctype="multipart/form-data" class="form" method="POST">
+
+                    <input type="hidden" name="admin_email[]" value="serhii@gmail.com">
+		                <input type="hidden" name="form_subject" value="Тема письма">
+
+                    <input type="name" name="name" data-validate-field="name" class="input-name" placeholder="First name" required>
+                    <input type="email" data-validate-field="email" name="email" class="input-name" placeholder="Email" required>
+                    <input type="tel" data-validate-field="tel" name="tel" class="input-name phone" placeholder="Number" required>
+                    <input type="text" name="text" class="input-name input-anything" placeholder="Asc Anything You Want" required>
                     <div class="input__wrapper">
-                      <input name="file" type="file" name="file" id="input__file" class="input input__file" multiple>
+                      <input type="file" name="file[]" id="input__file" class="input input__file" multiple>
                       <label for="input__file" class="input__file-button">
                          <span class="input__file-icon-wrapper">
                            <img class="input__file-icon" src="./img/File_icon.svg" alt="Attach file" width="25">
@@ -221,7 +280,7 @@
                          <span class="input__file-button-text">Attach CV</span>
                       </label>
                     </div>
-                    <button class="btn-form">Get In Tuch With Us</button>
+                    <button class="btn-form"><span>Get In Tuch With Us</span></button>
                   </form>
                 </div>
               </div>
@@ -229,43 +288,65 @@
           </div>
         </div>
       </section>
-    </div>
+    </main>
+
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
-          <div class="footer-item">
-            <h3>Our sectors</h3>
-            <ul>
-              <li><a href="#">Wind Power</a></li>
-              <li><a href="#">Solar Power</a></li>
-              <li><a href="#">Hydro Power</a></li>
-              <li><a href="#">Enertgy Storage</a></li>
-              <li><a href="#">Digital</a></li>
+          <div class="item">
+            <a href="#" class="footer-link ">Our sectors</a>
+            <ul class="link-list">
+              <li ><a href="#">Wind Power</a></li>
+              <li ><a href="#">Solar Power</a></li>
+              <li ><a href="#">Hydro Power</a></li>
+              <li ><a href="#">Enertgy Storage</a></li>
+              <li ><a href="#">Digital</a></li>
             </ul>
           </div>
-          <div class="footer-item">
-            <h3>What we do</h3>
-            <ul>
-              <li><a href="#">Team Build</a></li>
-              <li><a href="#">Traditional Hirng</a></li>
-              <li><a href="#">Contractor Search</a></li>
-              <li><a href="#">Payroll Solutions</a></li>
-              <li><a href="#">Investments</a></li>
+          <div class="item">
+            <a href="#" class="footer-link ">What we do</a>
+            <ul class="link-list">
+              <li ><a href="#">Team Build</a></li>
+              <li ><a href="#">Traditional Hirng</a></li>
+              <li ><a href="#">Contractor Search</a></li>
+              <li ><a href="#">Payroll Solutions</a></li>
+              <li ><a href="#">Investments</a></li>
             </ul>
           </div>
-          <div class="footer-item">
-            <h3>Contact Us</h3>
-            <ul>
-              <li><a href="#">Send your CV</a></li>
-              <li><a href="#">Chat to us</a></li>
-              <li><a href="#">Submit a vacancy</a></li>
-              <li><a href="#">Office locations</a></li>
+          <div class="item">
+            <a href="#" class="footer-link ">Contact Us</a>
+            <ul class="link-list">
+              <li ><a href="#">Send your CV</a></li>
+              <li ><a href="#">Chat to us</a></li>
+              <li ><a href="#">Submit a vacancy</a></li>
+              <li ><a href="#">Office locations</a></li>
             </ul>
           </div>
+        </div>
+        <div class="footer-social">
+          <h2 class="title">Social:</h2>
+          <a href="#">
+            <img src="./img/facebook.svg" alt="F icon">
+            <span>Facebook</span>
+          </a>
+          <a href="#">
+            <img src="./img/linkedin.svg" alt="F icon">
+            <span>LinkedIn</span>
+          </a>
+          <a href="#">
+            <img src="./img/tw.svg" alt="F icon">
+            <span>Twiter</span>
+          </a>
+          <a href="#">
+            <img src="./img/insta.svg" alt="F icon">
+            <span>Instagram</span>
+          </a>
+          <div class="copyright">© Copyright 2019</div>
         </div>
         <div class="copyright">© Copyright 2019</div>
       </div>
     </footer>
+
   </div>
 </body>
 </html>

@@ -1,0 +1,22 @@
+@mixin service-text-styles {
+	max-width: 544px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    padding-top: 63px;
+    position: relative;
+    
+}
+@mixin after-block {
+    content: '';
+      position: absolute;
+      top: 105px;
+      background: url('../img/service-line.svg') no-repeat;
+      background-size: cover;
+      min-width: 645px;
+      width: 100%;
+      height: 23px;
+      display: block;
+}
