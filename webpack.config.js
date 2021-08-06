@@ -10,7 +10,7 @@ const ImageminPlugin = require('imagemin-webpack');
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev;
 
-const filename = (ext) => isDev ? `[name].${ext}` : `[name].[contenthash].${ext}`;
+const filename = (ext) => isDev ? `[name].${ext}` : `[name].${ext}`;
 
 const optimization = () => {
   const configObj = {
